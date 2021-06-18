@@ -1,5 +1,13 @@
+
+
 (function ($) {
   "use strict";
+
+  $("#menu-icon").click(function(){
+    console.log("sssssssssssssssss");
+    $(".toggle").slideToggle("slow");
+    // $(".navbar").css("height", "100vh");
+  });
 
 
   var $btns = $('.btn').click(function() {

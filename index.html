@@ -32,18 +32,20 @@
     <link rel="stylesheet/less" href="css/styles.less" />
     
   </head>
+  
   <body>
     <div class="container">
 
       <!-- Header Start -->
 
-      <header class="bg" style="background-image: url('/img/banner.jpg')">
+      <header class="bg">
         <div class="navbar">
           <div class="navbar-inner">
             <div class="navbar__logo">
               <img src="./img/Logo (5).png" alt="Logo" />
+              <div id="menu-icon"><i class="far fa-bars"></i></div>
             </div>
-            <nav class="navbar__link">
+            <nav class="navbar__link toggle">
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pages</a></li>
@@ -53,16 +55,16 @@
                 <li><a href="#">Contacts</a></li>
               </ul>
             </nav>
-            <div class="navbar__icon">
+            <div class="navbar__icon toggle">
               <ul>
                 <li>
                   <a href="#"><i class="far fa-search"></i></a>
                 </li>
-                <span style="color: #ffffff">|</span>
+                <span>|</span>
                 <li>
                   <a href="#"><i class="far fa-shopping-basket"></i></a>
                 </li>
-                <span style="color: #ffffff">|</span>
+                <span>|</span>
                 <li>
                   <a href="#"><i class="far fa-user"></i></a>
                 </li>
@@ -76,9 +78,9 @@
             <h2>Best body fitness</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. <br />
+              industry. <span></span>
               Lorem Ipsum has been the industry's standard dummy text ever since
-              the <br />
+              the <span></span>
               1500s, when an unknown printer.
             </p>
             <button>shop now</button>
@@ -145,15 +147,13 @@
           <button class="btn" id="most-review">Most review</button>
         </div>
 
-        <hr class="style-hr" style="margin-bottom: 40px" />
+        <hr class="hr-style"/>
 
         <div id="list-product">
           <div class="product-item-wrap">
             <div class="product-item-inner">
               <div class="product-item-inner__img">
-                <div class="box-img">
                   <img src="./img/product_1.png" alt="product_1" />
-                </div>
               </div>
               <div class="product-item-inner__text">
                 <div class="product-item-inner__text--name">
@@ -180,9 +180,7 @@
           <div class="product-item-wrap featured">
             <div class="product-item-inner">
               <div class="product-item-inner__img">
-                <div class="box-img">
                   <img src="./img/product_2.png" alt="product_1" />
-                </div>
               </div>
               <div class="product-item-inner__text">
                 <div class="product-item-inner__text--name">
@@ -209,9 +207,7 @@
           <div class="product-item-wrap most-review">
             <div class="product-item-inner">
               <div class="product-item-inner__img">
-                <div class="box-img">
                   <img src="./img/product_3.png" alt="product_1" />
-                </div>
               </div>
               <div class="product-item-inner__text">
                 <div class="product-item-inner__text--name">
@@ -238,9 +234,7 @@
           <div class="product-item-wrap most-review">
             <div class="product-item-inner">
               <div class="product-item-inner__img">
-                <div class="box-img">
                   <img src="./img/product_4.png" alt="product_1" />
-                </div>
               </div>
               <div class="product-item-inner__text">
                 <div class="product-item-inner__text--name">
@@ -267,9 +261,7 @@
           <div class="product-item-wrap most-review">
             <div class="product-item-inner">
               <div class="product-item-inner__img">
-                <div class="box-img">
                   <img src="./img/product_5.png" alt="product_1" />
-                </div>
               </div>
               <div class="product-item-inner__text">
                 <div class="product-item-inner__text--name">
@@ -296,9 +288,7 @@
           <div class="product-item-wrap featured">
             <div class="product-item-inner">
               <div class="product-item-inner__img">
-                <div class="box-img">
                   <img src="./img/product_6.png" alt="product_1" />
-                </div>
               </div>
               <div class="product-item-inner__text">
                 <div class="product-item-inner__text--name">
@@ -325,9 +315,7 @@
           <div class="product-item-wrap featured">
             <div class="product-item-inner">
               <div class="product-item-inner__img">
-                <div class="box-img">
                   <img src="./img/product_7.png" alt="product_1" />
-                </div>
               </div>
               <div class="product-item-inner__text">
                 <div class="product-item-inner__text--name">
@@ -395,7 +383,7 @@
             <img src="./img/client_1.png" alt="user" />
             <p>
               “Good services. I bought a bicycle with a wrong but they accepted
-              free return for me <br/>and exchange a new product for me."
+              free return for me <span></span>and exchange a new product for me."
             </p>
             <p>LINA</p>
             <p>Happy clients</p>
@@ -404,7 +392,7 @@
             <img src="./img/client_2.jpg" alt="user" />
             <p>
               “Good services. I bought a bicycle with a wrong but they accepted
-              free return for me <br/>and exchange a new product for me."
+              free return for me <span></span>and exchange a new product for me."
             </p>
             <p>JIMIN</p>
             <p>Happy clients</p>
@@ -413,12 +401,13 @@
             <img src="./img/client_3.jpg" alt="user" />
             <p>
               “Good services. I bought a bicycle with a wrong but they accepted
-              free return for me <br/>and exchange a new product for me."
+              free return for me <span></span>and exchange a new product for me."
             </p>
             <p>JENNIE</p>
             <p>Happy clients</p>
           </div>
         </div>
+        <hr class="style-hr" />
       </section>
 
       <!-- Client Say End -->
@@ -426,7 +415,7 @@
 
       <!-- List Brand Start -->   
 
-       <hr class="style-hr" />
+
        <section class="list-brand">
          <div class="brand">
            <a href="#"> <img src="./img/brand_1.png" alt="brand" /></a>
@@ -463,92 +452,94 @@
  
       <!-- Footer Start -->   
 
-       <footer class="footer">
-         <div class="footer__top">
-            <div class="footer__top__inner">
-              <div class="footer__top__inner--logo">
-                <img src="./img/Logo (5).png" alt="Logo" /></a>
-              </div>
-                 <p>
-                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                 industry. Lorem Ipsum has been the<br/> industry's standard dummy text
-                 ever since the 1500s, when an unknown printer took a galley of type
-               </p>
-               <ul class="footer__top__inner--icon">
-                 <li>
-                   <a href=""><i class="fab fa-facebook-f"></i></a>
-                 </li>
-                 <li>
-                   <a href=""><i class="fab fa-twitter"></i></a>
-                 </li>
-                 <li>
-                   <a href=""><i class="fab fa-google-plus-g"></i></a>
-                 </li>
-                 <li>
-                   <a href=""><i class="fab fa-youtube"></i></a>
-                 </li>
-               </ul>
+       <footer>
+        <div class="footer">
+          <div class="footer__top">
+             <div class="footer__top__inner">
+               <div class="footer__top__inner--logo">
+                 <img src="./img/Logo (5).png" alt="Logo" /></a>
+               </div>
+                  <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the<span></span> industry's standard dummy text
+                  ever since the 1500s, when an unknown printer took a galley of type
+                </p>
+                <ul class="footer__top__inner--icon">
+                  <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+             </div>
+          </div>
+          <hr class="style-hr" />
+          <div class="footer__content">
+            <div class="footer__content--col">
+              <h1>Contact us</h1>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-map-marker-alt"></i> &nbsp; &nbsp;&nbsp;&nbsp;200 Lincoln
+                    Ave, Salinas, CA 93901</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-phone"></i> &nbsp;&nbsp;&nbsp;023 32423 223</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fad fa-envelope"></i> &nbsp;&nbsp;&nbsp;
+                    gymax@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-clock"></i> &nbsp;&nbsp;&nbsp;9:00 - 20:00 All
+                    day</a
+                  >
+                </li>
+              </ul>
             </div>
+            <div class="footer__content--col">
+              <h1>MY ACCOUNT</h1>
+              <ul>
+                <li><a href="#">My account</a></li>
+                <li><a href="#">Check out</a></li>
+                <li><a href="#">register</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+            <div class="footer__content--col">
+             <h1>INFORMATION</h1>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Terms of user</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer__content--col">
+              <h1>QUICK LINK</h1>
+              <ul>
+                <li><a href="#">New user</a></li>
+                <li><a href="#">Help center</a></li>
+                <li><a href="#">Report spam</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
          </div>
-         <hr class="style-hr" />
-         <div class="footer__content">
-           <div class="footer__content--col">
-             <h1>Contact us</h1>
-             <ul>
-               <li>
-                 <a href="#"
-                   ><i class="fas fa-map-marker-alt"></i> &nbsp; &nbsp;&nbsp;&nbsp;200 Lincoln
-                   Ave, Salinas, CA 93901</a
-                 >
-               </li>
-               <li>
-                 <a href="#"
-                   ><i class="fas fa-phone"></i> &nbsp;&nbsp;&nbsp;023 32423 223</a
-                 >
-               </li>
-               <li>
-                 <a href="#"
-                   ><i class="fad fa-envelope"></i> &nbsp;&nbsp;&nbsp;
-                   gymax@example.com</a
-                 >
-               </li>
-               <li>
-                 <a href="#"
-                   ><i class="fas fa-clock"></i> &nbsp;&nbsp;&nbsp;9:00 - 20:00 All
-                   day</a
-                 >
-               </li>
-             </ul>
-           </div>
-           <div class="footer__content--col">
-             <h1>MY ACCOUNT</h1>
-             <ul>
-               <li><a href="#">My account</a></li>
-               <li><a href="#">Check out</a></li>
-               <li><a href="#">register</a></li>
-               <li><a href="#">Login</a></li>
-             </ul>
-           </div>
-           <div class="footer__content--col">
-            <h1>INFORMATION</h1>
-             <ul>
-               <li><a href="#">About us</a></li>
-               <li><a href="#">Contact us</a></li>
-               <li><a href="#">Terms of user</a></li>
-               <li><a href="#">Privacy Policy</a></li>
-             </ul>
-           </div>
-           <div class="footer__content--col">
-             <h1>QUICK LINK</h1>
-             <ul>
-               <li><a href="#">New user</a></li>
-               <li><a href="#">Help center</a></li>
-               <li><a href="#">Report spam</a></li>
-               <li><a href="#">FAQs</a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="footer__bottom">
+         <div class="copyright">
            <p>
              Copyright © 2019 Gymax - Design by <a href="#">ArrowHitech</a> - All
              Rights Reserved
