@@ -102,7 +102,7 @@ a {
 }
 
 .bg {
-  background-image: url("/img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -564,12 +564,15 @@ a {
       width: 25%;
       position: relative;
       box-sizing: border-box;
-      padding-right: 21px;
+      padding: 0 12px;
       margin-bottom: 44px;
 
-      &:nth-child(4n + 0) {
-        padding-right: 0;
-      }
+      // &:nth-child(4n + 0) {
+      //   padding-right: 0;
+      //   .responsive(1024px, {
+      //     padding-right: 21px;
+      //   })
+      // }
 
       &:hover .list-icon {
         display: block;
@@ -611,7 +614,7 @@ a {
           }
         }
 
-        .responsive(375px, {
+        .responsive(1024px, {
           box-shadow: @shadow;
         });
       }
@@ -651,27 +654,18 @@ a {
           left: 50%;
           transform: translate(-50%, -50%);
         }
+
+        .responsive(1024px, {
+          display: block;
+        })
       }
 
       .responsive(768px, {
-      width: calc(100%/3);
-      // padding: 10px;
-       &:nth-child(3n + 0) {
-        padding-right: 0;
-      }
-        });
-      .responsive(576px, {
       width: 50%;
-      &:nth-child(2n + 0) {
-        padding-right: 0;
-      }
       });
 
       .responsive(375px, {
       width: 100%;
-      &:nth-child(n + 0) {
-        padding-right: 0;
-      }
        });
     }
   }
@@ -810,7 +804,7 @@ a {
     color: @text-gray;
 
     .responsive(768px, {
-      width: calc(100% / 3);
+      width: calc(100% / 2);
     });
 
     .responsive(375px, {
@@ -944,10 +938,10 @@ footer {
         }
 
         .responsive(1024px, {font-size: 12px});
-        .responsive(768px,{
-          line-height: 20px;
-          font-size: 9px;
-        });
+        // .responsive(768px,{
+        //   line-height: 20px;
+        //   font-size: 9px;
+        // });
       }
 
       .responsive(768px, {
@@ -963,6 +957,7 @@ footer {
       margin: 30px auto 0;
     });
   }
+
 
   .responsive(1024px, {
     padding: 0 15px;

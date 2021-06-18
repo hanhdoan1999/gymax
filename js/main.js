@@ -3,6 +3,19 @@
 (function ($) {
   "use strict";
 
+  //Resize handler to reset the menu visibility 
+var resizeTimer;
+$(window).on('resize', function (e) {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+        if ($(window).width() > 768) {
+            $('.toggle').show();
+        } else {
+            $('.toggle').hide();
+        }
+    }, 100);
+});
+
   $("#menu-icon").click(function(){
     console.log("sssssssssssssssss");
     $(".toggle").slideToggle("slow");
