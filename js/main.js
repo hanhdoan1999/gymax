@@ -3,12 +3,18 @@
 (function ($) {
   "use strict";
 
+
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+  });
+
+
   //Resize handler to reset the menu visibility 
 var resizeTimer;
 $(window).on('resize', function (e) {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
-        if ($(window).width() > 768) {
+        if ($(window).width() >= 768) {
             $('.toggle').show();
         } else {
             $('.toggle').hide();
@@ -17,11 +23,9 @@ $(window).on('resize', function (e) {
 });
 
   $("#menu-icon").click(function(){
-    console.log("sssssssssssssssss");
     $(".toggle").slideToggle("slow");
     // $(".navbar").css("height", "100vh");
   });
-
 
   var $btns = $('.btn').click(function() {
       if (this.id == 'all') {
