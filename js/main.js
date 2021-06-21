@@ -3,11 +3,9 @@
 (function ($) {
   "use strict";
 
-
   $(window).on("load",function(){
     $(".loader-wrapper").fadeOut("slow");
   });
-
 
   //Resize handler to reset the menu visibility 
 var resizeTimer;
@@ -15,16 +13,15 @@ $(window).on('resize', function (e) {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
         if ($(window).width() >= 768) {
-            $('.toggle').show();
+            $('.navbar__link').show();
         } else {
-            $('.toggle').hide();
+            $('.navbar__link').hide();
         }
     }, 100);
 });
 
   $("#menu-icon").click(function(){
-    $(".toggle").slideToggle("slow");
-    // $(".navbar").css("height", "100vh");
+    $(".navbar__link").slideToggle("slow");
   });
 
   var $btns = $('.btn').click(function() {
@@ -51,7 +48,5 @@ $(window).on('resize', function (e) {
       }
   });
   
-  
-
 })(jQuery);
 
